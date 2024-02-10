@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.profile-card {
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  border: 3px solid  rgba(69, 86, 107, .3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-card::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+  height: 36%;
+  width: 100%;
+  background-color:#3498db;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: lightseagreen;
+  padding: 3px;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+.profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid lightseagreen;
+}
+
+.text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.name{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 9px;
+    
+}
+
+.job{
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.media-buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+.link{
+  display: flex;
+  border-radius: 50%;
+  border: 0 solid black;
+  cursor: pointer;
+  size: 100px;
+  font-size: 18px;
+  color: white;
+  transition: all .1s ease-in-out;
+  &:hover{
+      transform: scale(1.1);
+      border: 2px solid black;
+}
+}
+
+.buttons{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.subscribe{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color: #3498db;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.subscribe:hover {
+  border: 2px solid red;
+  background-color: red;
+  color: #ffffff;
+}
+
+
+.message{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  color: #3498db;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.message:hover{
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.analytics{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  gap: 20px;
+
+}
+
